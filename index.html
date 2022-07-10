@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+<head>
+
+  <!-- ** Basic Page Needs ** -->
+  <meta charset="utf-8">
+  <title>Gas leakage meter</title>
+
+  <!-- ** Mobile Specific Metas ** -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  
+  
+  <!-- Stylesheets -->
+ 
+  
+  <!--Favicon-->
+  <link rel="icon" href="fire.png" type="image/x-icon">
+ 
+</head><body id="body">
+  
+<!-- preloader start -->
+<div class="preloader"></div>
+<!-- preloader end -->
+
+  
+<header class="navigation sticky-top bg-white">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+	<div class="container">
+		<div >
+			<div >
+       
+        <body>
+          <!-- CONTAINER FOR CHART -->
+          <div id="chart_div"></div>
+    
+      
+     
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+
+<script src="plugins/jquery/jquery.js"></script>
+
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="plugins/slick/slick.min.js"></script>
+
+<script src="js/script.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js"></script>
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app-compat.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-storage-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database-compat.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCvHXeBbvbLPz9umZnXkDVdShh_eKWTM5c",
+    authDomain: "gas-leakage-detection-sy-bb6bc.firebaseapp.com",
+    databaseURL: "https://gas-leakage-detection-sy-bb6bc-default-rtdb.firebaseio.com",
+    projectId: "gas-leakage-detection-sy-bb6bc",
+    storageBucket: "gas-leakage-detection-sy-bb6bc.appspot.com",
+    messagingSenderId: "339260395845",
+    appId: "1:339260395845:web:e4051002a6eb1581536e2c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ 
+</script> 
+<script  src="gauge.js"></script>
+</body>
+</html>
