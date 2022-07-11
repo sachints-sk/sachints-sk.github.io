@@ -5,6 +5,16 @@ ref.on("value", function(snapshot) {
     snapshot.forEach((childSnapshot) => {
         var childKey = childSnapshot.key;
          childData = childSnapshot.val();
+         if(childData>500){
+
+            Swal.fire({
+                icon: 'warning',
+                title: "LEAKAGE DETECTED",
+                text: "errorMessage",
+                
+              })
+        
+        }
         // ...
       });
       console.log(childData);
@@ -12,16 +22,7 @@ ref.on("value", function(snapshot) {
    console.log("Error: " + error.code);
 });
 
-if(childData>500){
 
-    Swal.fire({
-        icon: 'warning',
-        title: errorCode,
-        text: errorMessage,
-        
-      })
-
-}
     // load current chart package
     google.charts.load("current", {
         packages: ["corechart", "line"]
