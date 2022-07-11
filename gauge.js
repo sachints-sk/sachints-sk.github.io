@@ -12,7 +12,16 @@ ref.on("value", function(snapshot) {
    console.log("Error: " + error.code);
 });
 
+if(childData>500){
 
+    Swal.fire({
+        icon: 'warning',
+        title: errorCode,
+        text: errorMessage,
+        
+      })
+
+}
     // load current chart package
     google.charts.load("current", {
         packages: ["corechart", "line"]
