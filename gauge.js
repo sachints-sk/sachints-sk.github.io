@@ -6,7 +6,8 @@ ref.on("value", function(snapshot) {
         var childKey = childSnapshot.key;
          childData = childSnapshot.val();
          if(childData>500){
-
+            document.getElementById('notification').muted = false;
+ document.getElementById('notification').play();
             Swal.fire({
                 icon: 'warning',
                 title: "LEAKAGE DETECTED",
