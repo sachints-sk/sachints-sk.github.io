@@ -5,7 +5,7 @@ ref.on("value", function(snapshot) {
     snapshot.forEach((childSnapshot) => {
         var childKey = childSnapshot.key;
          childData = childSnapshot.val();
-         if(childData>500){
+         if(childData>400){
             document.getElementById('notification').muted = false;
  document.getElementById('notification').play();
             Swal.fire({
