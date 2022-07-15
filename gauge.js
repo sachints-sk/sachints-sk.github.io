@@ -10,8 +10,8 @@ ref.on("value", function(snapshot) {
  document.getElementById('notification').play();
             Swal.fire({
                 icon: 'warning',
-                title: "LEAKAGE DETECTED",
-                text: "errorMessage",
+                title: "HAZARDOUS GAS DETECTED",
+                text: "Please take immediate actions",
                 
               })
         
